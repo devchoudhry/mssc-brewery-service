@@ -25,7 +25,7 @@ import guru.springframework.msscbreweryservice.web.model.BeerDto;
 @RestController
 public class BeerController {
 	
-	@GetMapping("/{beerid}")
+	@GetMapping("/{beerId}")
 	ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId") UUID beerId) {
 		//Todo Imppl
 		return new ResponseEntity<>(BeerDto.builder().build(), HttpStatus.OK);
